@@ -11,7 +11,7 @@ import com.google.protobuf.MessageLite;
 
 /**
  * 
- * @author Yanran Lu
+ * @author Lyr
  * 
  */
 public class MessageManager {

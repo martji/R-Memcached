@@ -1,6 +1,11 @@
 package common;
 public enum EMSGID 
 {
+	nc_read,
+	nc_write,
+	nc_read_res,
+	nc_write_res,
+	
 	nr_read,
 	nr_read_res,
 	nr_write,

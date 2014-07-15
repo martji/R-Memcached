@@ -3,16 +3,16 @@ package com.myself.client;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map.Entry;
-
 import com.myself.server.ClientConfig;
 
 public class ClientMgr
 {	
 	public HashMap<Integer, Client> m_mapLocalClients;
 	static ClientMgr clientMgr;
+	public static int protocol;
 	public int mClientNumber;
 	public static int nCopyNode;
-	public static int protocol;
+	
 	public static final Integer twoPhaseCommit = 0;
 	public static final Integer paxos = (nCopyNode-1)-((nCopyNode-1)/2+1);
 	public static final Integer weak = nCopyNode-2;
