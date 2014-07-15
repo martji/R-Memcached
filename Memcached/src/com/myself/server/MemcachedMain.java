@@ -1,8 +1,11 @@
 package com.myself.server;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Properties;
 import java.util.Scanner;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -17,10 +20,13 @@ import org.xml.sax.SAXException;
 
 import com.myself.client.Client;
 import com.myself.client.ClientMgr;
+
 import common.RegisterHandler;
 
 public class MemcachedMain {
 	HashMap<Integer, ClientConfig> m_mapMemcachedClient;
+	String webServerHost;
+	String protocolName;
 
 	public boolean initConfig() {
 		m_mapMemcachedClient = new HashMap<Integer, ClientConfig>();
@@ -28,11 +34,34 @@ public class MemcachedMain {
 		File f = new File(System.getProperty("user.dir"));
 		String path = f.getPath() + File.separator + "bin" + File.separator;
 		readClientsXML(path + "client.xml");
+		try {
+			Properties properties = new Properties();
+			properties.load(new FileInputStream(path+"config.properties"));
+			webServerHost = properties.getProperty("webServerHost").toString();
+			ClientMgr.nCopyNode = Integer.parseInt(properties.getProperty("replicasNum"));
+			protocolName = properties.getProperty("consistencyProtocol").toString();
+			if(protocolName.equals("twoPhaseCommit")){
+				ClientMgr.protocol = ClientMgr.twoPhaseCommit;
+			}else if(protocolName.equals("paxos")){
+				ClientMgr.protocol = ClientMgr.paxos;
+			}else if(protocolName.equals("weak")){
+				ClientMgr.protocol = ClientMgr.weak;
+			}else{
+				System.err.print("consistency protocol input error");
+				return false;
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return true;
 	}
 
 	public int getMemcachedNumber() {
-		System.out.print(" ‰»Î∑˛ŒÒ±‡∫≈£∫");
+		System.out.print("Please in put R-Memcached ID:£∫");
 		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		return Integer.decode(scanner.next());
@@ -51,7 +80,7 @@ public class MemcachedMain {
 		clientMgr.init(num, m_mapMemcachedClient);
 
 		Client webClient = new Client();
-		webClient.init("192.168.3.201", 8888);
+		webClient.init(webServerHost, 8888);
 	}
 
 	public static void main(String[] args) {
@@ -91,18 +120,13 @@ public class MemcachedMain {
 								m++;
 								localClient.client_port = Integer.decode(record
 										.getTextContent());
-							} else if (record.getNodeName().equals(
-									"request_port")) {
-								m++;
-								localClient.request_port = Integer
-										.decode(record.getTextContent());
 							} else if (record.getNodeName().equals("memcached")) {
 								m++;
 								localClient.memcached = record.getTextContent();
 							}
 						}
 					}
-					if (m == 5) {
+					if (m == 4) {
 						m_mapMemcachedClient.put(localClient.id, localClient);
 					}
 				}

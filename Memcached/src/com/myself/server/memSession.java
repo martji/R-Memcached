@@ -1,6 +1,5 @@
 package com.myself.server;
 
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -224,7 +223,7 @@ public class memSession implements Runnable {
 					return;
 				}
 			} 
-			// 数据有问题，转移副本
+			// Can't get data in local Memcached server, try to ask for data from another cache node
 			nm_read.Builder builder = nm_read.newBuilder();
 			builder.setKey(msgLite.getKey());
 			builder.setTime(msgLite.getTime());
@@ -404,7 +403,7 @@ public class memSession implements Runnable {
 		case nm_write_1_res: {
 			nm_write_1_res msgLite = msg.getMessageLite();
 
-			if (desLockKeyCount(msgLite.getKey()) == 0) {
+			if (desLockKeyCount(msgLite.getKey()) == ClientMgr.protocol) {
 				boolean res = client.set(msgLite.getKey(),
 						msgLite.getValue());
 				if (res) {

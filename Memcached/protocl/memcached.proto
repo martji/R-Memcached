@@ -39,6 +39,13 @@ message nm_read
 	optional int64  time=3;
 }
 
+message nm_read_recovery
+{
+	optional string key=1;
+	optional string value=2;
+	optional int64  time=3;
+}
+
 message nm_write_1
 {
 	optional string key=1;

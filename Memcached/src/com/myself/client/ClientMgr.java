@@ -3,6 +3,7 @@ package com.myself.client;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map.Entry;
+
 import com.myself.server.ClientConfig;
 
 public class ClientMgr
@@ -10,7 +11,11 @@ public class ClientMgr
 	public HashMap<Integer, Client> m_mapLocalClients;
 	static ClientMgr clientMgr;
 	public int mClientNumber;
-	public static final int nCopyNode = 3;
+	public static int nCopyNode;
+	public static int protocol;
+	public static final Integer twoPhaseCommit = 0;
+	public static final Integer paxos = (nCopyNode-1)-((nCopyNode-1)/2+1);
+	public static final Integer weak = nCopyNode-2;
 	
 	public static ClientMgr getInstance()
 	{
