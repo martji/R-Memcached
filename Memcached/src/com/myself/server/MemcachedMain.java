@@ -30,12 +30,13 @@ public class MemcachedMain {
 		m_mapMemcachedClient = new HashMap<Integer, ClientConfig>();
 
 		File f = new File(System.getProperty("user.dir"));
-		String path = f.getPath() + File.separator + "bin" + File.separator;
+		String path = f.getPath() + File.separator;
+		System.out.println(path);
 		readClientsXML(path + "client.xml");
 		
 		try {
 			Properties properties = new Properties();
-			properties.load(new FileInputStream(path+"config.properties"));
+			properties.load(new FileInputStream(path + "config.properties"));
 			webServerHost = properties.getProperty("webServerHost").toString();
 			ClientMgr.nCopyNode = Integer.parseInt(properties.getProperty("replicasNum"));
 			protocolName = properties.getProperty("consistencyProtocol").toString();

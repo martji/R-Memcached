@@ -1,7 +1,9 @@
 2014/7/15
 martji
-创建工程
-
-2014/7/15
-martji
 create project
+
+21:26 2014/7/15
+martji
+1. export a runnable jar from Memcached(r-memcahced.jar)
+2. export a jar from WebServer(webserver.jar)
+3. creste a simple WebApp with webserver.jar
