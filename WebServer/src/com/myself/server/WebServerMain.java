@@ -38,8 +38,9 @@ public class WebServerMain
 		private String[] keys;
 		private int size;
 		private int nums;
+		private double rate;
 
-		public bench(int runs,int nums, int threadNum, String object, String[] keys)
+		public bench(int runs,int nums, int threadNum, String object, String[] keys, double rate)
 		{
 			this.runs = runs;
 			this.threadNum = threadNum;
@@ -47,6 +48,7 @@ public class WebServerMain
 			this.keys = keys;
 			this.size = object.length();
 			this.nums = nums;
+			this.rate = rate;
 		}
 
 		public void run() 
@@ -60,7 +62,11 @@ public class WebServerMain
 				e.printStackTrace();
 			}
 			// time deletes
-			randReadWrite(0.8);
+			long time = 0;
+			time = System.nanoTime();
+			randReadWrite(rate);
+			time = System.nanoTime() - time;
+			System.out.println(time/1000000000.0f);
 		}
 		
 		public void randReadWrite(double scale)
@@ -79,7 +85,7 @@ public class WebServerMain
 				
 				try
 				{
-					Thread.sleep(50);
+					Thread.sleep((long) 0.00001);
 				} catch (InterruptedException e)
 				{
 					// TODO Auto-generated catch block
@@ -108,6 +114,7 @@ public class WebServerMain
 		int runs = Integer.parseInt(args[1]);   //执行次数
 		int Nums = Integer.parseInt(args[2]);	// key数目
 		int size = Integer.parseInt(args[3]);	// value大小
+		double rate = Double.parseDouble(args[4]); //读写比例
 
 		// get object to store
 		byte[] obj = new byte[size];
@@ -125,7 +132,7 @@ public class WebServerMain
 
 		for (int i = 0; i < threads; i++) 
 		{
-			bench b = new bench(runs, Nums, i, value, keys);
+			bench b = new bench(runs, Nums, i, value, keys, rate);
 			b.start();
 		}
 	}

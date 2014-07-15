@@ -2720,6 +2720,532 @@ public final class memcachedmsg {
     // @@protoc_insertion_point(class_scope:nm_read)
   }
   
+  public interface nm_read_recoveryOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // optional string key = 1;
+    boolean hasKey();
+    String getKey();
+    
+    // optional string value = 2;
+    boolean hasValue();
+    String getValue();
+    
+    // optional int64 time = 3;
+    boolean hasTime();
+    long getTime();
+  }
+  public static final class nm_read_recovery extends
+      com.google.protobuf.GeneratedMessage
+      implements nm_read_recoveryOrBuilder {
+    // Use nm_read_recovery.newBuilder() to construct.
+    private nm_read_recovery(Builder builder) {
+      super(builder);
+    }
+    private nm_read_recovery(boolean noInit) {}
+    
+    private static final nm_read_recovery defaultInstance;
+    public static nm_read_recovery getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public nm_read_recovery getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return messageBody.memcachedmsg.internal_static_nm_read_recovery_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return messageBody.memcachedmsg.internal_static_nm_read_recovery_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // optional string key = 1;
+    public static final int KEY_FIELD_NUMBER = 1;
+    private java.lang.Object key_;
+    public boolean hasKey() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getKey() {
+      java.lang.Object ref = key_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          key_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getKeyBytes() {
+      java.lang.Object ref = key_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        key_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // optional string value = 2;
+    public static final int VALUE_FIELD_NUMBER = 2;
+    private java.lang.Object value_;
+    public boolean hasValue() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getValue() {
+      java.lang.Object ref = value_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          value_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getValueBytes() {
+      java.lang.Object ref = value_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        value_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // optional int64 time = 3;
+    public static final int TIME_FIELD_NUMBER = 3;
+    private long time_;
+    public boolean hasTime() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public long getTime() {
+      return time_;
+    }
+    
+    private void initFields() {
+      key_ = "";
+      value_ = "";
+      time_ = 0L;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getKeyBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getValueBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt64(3, time_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getKeyBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getValueBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(3, time_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static messageBody.memcachedmsg.nm_read_recovery parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static messageBody.memcachedmsg.nm_read_recovery parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static messageBody.memcachedmsg.nm_read_recovery parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static messageBody.memcachedmsg.nm_read_recovery parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static messageBody.memcachedmsg.nm_read_recovery parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static messageBody.memcachedmsg.nm_read_recovery parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static messageBody.memcachedmsg.nm_read_recovery parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static messageBody.memcachedmsg.nm_read_recovery parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static messageBody.memcachedmsg.nm_read_recovery parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static messageBody.memcachedmsg.nm_read_recovery parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(messageBody.memcachedmsg.nm_read_recovery prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements messageBody.memcachedmsg.nm_read_recoveryOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return messageBody.memcachedmsg.internal_static_nm_read_recovery_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return messageBody.memcachedmsg.internal_static_nm_read_recovery_fieldAccessorTable;
+      }
+      
+      // Construct using messageBody.memcachedmsg.nm_read_recovery.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        key_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        value_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        time_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return messageBody.memcachedmsg.nm_read_recovery.getDescriptor();
+      }
+      
+      public messageBody.memcachedmsg.nm_read_recovery getDefaultInstanceForType() {
+        return messageBody.memcachedmsg.nm_read_recovery.getDefaultInstance();
+      }
+      
+      public messageBody.memcachedmsg.nm_read_recovery build() {
+        messageBody.memcachedmsg.nm_read_recovery result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private messageBody.memcachedmsg.nm_read_recovery buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        messageBody.memcachedmsg.nm_read_recovery result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public messageBody.memcachedmsg.nm_read_recovery buildPartial() {
+        messageBody.memcachedmsg.nm_read_recovery result = new messageBody.memcachedmsg.nm_read_recovery(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.key_ = key_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.value_ = value_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.time_ = time_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof messageBody.memcachedmsg.nm_read_recovery) {
+          return mergeFrom((messageBody.memcachedmsg.nm_read_recovery)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(messageBody.memcachedmsg.nm_read_recovery other) {
+        if (other == messageBody.memcachedmsg.nm_read_recovery.getDefaultInstance()) return this;
+        if (other.hasKey()) {
+          setKey(other.getKey());
+        }
+        if (other.hasValue()) {
+          setValue(other.getValue());
+        }
+        if (other.hasTime()) {
+          setTime(other.getTime());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              key_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              value_ = input.readBytes();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              time_ = input.readInt64();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // optional string key = 1;
+      private java.lang.Object key_ = "";
+      public boolean hasKey() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getKey() {
+        java.lang.Object ref = key_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          key_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setKey(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        key_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearKey() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        key_ = getDefaultInstance().getKey();
+        onChanged();
+        return this;
+      }
+      void setKey(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        key_ = value;
+        onChanged();
+      }
+      
+      // optional string value = 2;
+      private java.lang.Object value_ = "";
+      public boolean hasValue() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getValue() {
+        java.lang.Object ref = value_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          value_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setValue(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        value_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearValue() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        value_ = getDefaultInstance().getValue();
+        onChanged();
+        return this;
+      }
+      void setValue(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        value_ = value;
+        onChanged();
+      }
+      
+      // optional int64 time = 3;
+      private long time_ ;
+      public boolean hasTime() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public long getTime() {
+        return time_;
+      }
+      public Builder setTime(long value) {
+        bitField0_ |= 0x00000004;
+        time_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearTime() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        time_ = 0L;
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:nm_read_recovery)
+    }
+    
+    static {
+      defaultInstance = new nm_read_recovery(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:nm_read_recovery)
+  }
+  
   public interface nm_write_1OrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
@@ -2731,9 +3257,9 @@ public final class memcachedmsg {
     boolean hasValue();
     String getValue();
     
-    // optional int32 time = 3;
+    // optional int64 time = 3;
     boolean hasTime();
-    int getTime();
+    long getTime();
     
     // optional int32 memID = 4;
     boolean hasMemID();
@@ -2832,13 +3358,13 @@ public final class memcachedmsg {
       }
     }
     
-    // optional int32 time = 3;
+    // optional int64 time = 3;
     public static final int TIME_FIELD_NUMBER = 3;
-    private int time_;
+    private long time_;
     public boolean hasTime() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
-    public int getTime() {
+    public long getTime() {
       return time_;
     }
     
@@ -2855,7 +3381,7 @@ public final class memcachedmsg {
     private void initFields() {
       key_ = "";
       value_ = "";
-      time_ = 0;
+      time_ = 0L;
       memID_ = 0;
     }
     private byte memoizedIsInitialized = -1;
@@ -2877,7 +3403,7 @@ public final class memcachedmsg {
         output.writeBytes(2, getValueBytes());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, time_);
+        output.writeInt64(3, time_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
         output.writeInt32(4, memID_);
@@ -2901,7 +3427,7 @@ public final class memcachedmsg {
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, time_);
+          .computeInt64Size(3, time_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
         size += com.google.protobuf.CodedOutputStream
@@ -3035,7 +3561,7 @@ public final class memcachedmsg {
         bitField0_ = (bitField0_ & ~0x00000001);
         value_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
-        time_ = 0;
+        time_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000004);
         memID_ = 0;
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -3164,7 +3690,7 @@ public final class memcachedmsg {
             }
             case 24: {
               bitField0_ |= 0x00000004;
-              time_ = input.readInt32();
+              time_ = input.readInt64();
               break;
             }
             case 32: {
@@ -3250,15 +3776,15 @@ public final class memcachedmsg {
         onChanged();
       }
       
-      // optional int32 time = 3;
-      private int time_ ;
+      // optional int64 time = 3;
+      private long time_ ;
       public boolean hasTime() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
-      public int getTime() {
+      public long getTime() {
         return time_;
       }
-      public Builder setTime(int value) {
+      public Builder setTime(long value) {
         bitField0_ |= 0x00000004;
         time_ = value;
         onChanged();
@@ -3266,7 +3792,7 @@ public final class memcachedmsg {
       }
       public Builder clearTime() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        time_ = 0;
+        time_ = 0L;
         onChanged();
         return this;
       }
@@ -5083,6 +5609,11 @@ public final class memcachedmsg {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_nm_read_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_nm_read_recovery_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_nm_read_recovery_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
     internal_static_nm_write_1_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -5118,15 +5649,16 @@ public final class memcachedmsg {
       "$\n\025nm_Connected_mem_back\022\013\n\003num\030\001 \001(\005\"$\n" +
       "\025nm_Connected_web_back\022\013\n\003num\030\001 \001(\005\"3\n\007n" +
       "m_read\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t\022\014\n\004ti" +
-      "me\030\003 \001(\003\"E\n\nnm_write_1\022\013\n\003key\030\001 \001(\t\022\r\n\005v" +
-      "alue\030\002 \001(\t\022\014\n\004time\030\003 \001(\005\022\r\n\005memID\030\004 \001(\005\"" +
-      "I\n\016nm_write_1_res\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030",
-      "\002 \001(\t\022\014\n\004time\030\003 \001(\003\022\r\n\005memID\030\004 \001(\005\"E\n\nnm" +
-      "_write_2\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t\022\014\n\004" +
-      "time\030\003 \001(\003\022\r\n\005memID\030\004 \001(\005\"I\n\016nm_write_2_" +
-      "res\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t\022\014\n\004time\030" +
-      "\003 \001(\003\022\r\n\005memID\030\004 \001(\005B\033\n\013messageBodyB\014mem" +
-      "cachedmsg"
+      "me\030\003 \001(\003\"<\n\020nm_read_recovery\022\013\n\003key\030\001 \001(" +
+      "\t\022\r\n\005value\030\002 \001(\t\022\014\n\004time\030\003 \001(\003\"E\n\nnm_wri" +
+      "te_1\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t\022\014\n\004time",
+      "\030\003 \001(\003\022\r\n\005memID\030\004 \001(\005\"I\n\016nm_write_1_res\022" +
+      "\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t\022\014\n\004time\030\003 \001(" +
+      "\003\022\r\n\005memID\030\004 \001(\005\"E\n\nnm_write_2\022\013\n\003key\030\001 " +
+      "\001(\t\022\r\n\005value\030\002 \001(\t\022\014\n\004time\030\003 \001(\003\022\r\n\005memI" +
+      "D\030\004 \001(\005\"I\n\016nm_write_2_res\022\013\n\003key\030\001 \001(\t\022\r" +
+      "\n\005value\030\002 \001(\t\022\014\n\004time\030\003 \001(\003\022\r\n\005memID\030\004 \001" +
+      "(\005B\033\n\013messageBodyB\014memcachedmsg"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -5181,8 +5713,16 @@ public final class memcachedmsg {
               new java.lang.String[] { "Key", "Value", "Time", },
               messageBody.memcachedmsg.nm_read.class,
               messageBody.memcachedmsg.nm_read.Builder.class);
-          internal_static_nm_write_1_descriptor =
+          internal_static_nm_read_recovery_descriptor =
             getDescriptor().getMessageTypes().get(6);
+          internal_static_nm_read_recovery_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_nm_read_recovery_descriptor,
+              new java.lang.String[] { "Key", "Value", "Time", },
+              messageBody.memcachedmsg.nm_read_recovery.class,
+              messageBody.memcachedmsg.nm_read_recovery.Builder.class);
+          internal_static_nm_write_1_descriptor =
+            getDescriptor().getMessageTypes().get(7);
           internal_static_nm_write_1_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_nm_write_1_descriptor,
@@ -5190,7 +5730,7 @@ public final class memcachedmsg {
               messageBody.memcachedmsg.nm_write_1.class,
               messageBody.memcachedmsg.nm_write_1.Builder.class);
           internal_static_nm_write_1_res_descriptor =
-            getDescriptor().getMessageTypes().get(7);
+            getDescriptor().getMessageTypes().get(8);
           internal_static_nm_write_1_res_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_nm_write_1_res_descriptor,
@@ -5198,7 +5738,7 @@ public final class memcachedmsg {
               messageBody.memcachedmsg.nm_write_1_res.class,
               messageBody.memcachedmsg.nm_write_1_res.Builder.class);
           internal_static_nm_write_2_descriptor =
-            getDescriptor().getMessageTypes().get(8);
+            getDescriptor().getMessageTypes().get(9);
           internal_static_nm_write_2_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_nm_write_2_descriptor,
@@ -5206,7 +5746,7 @@ public final class memcachedmsg {
               messageBody.memcachedmsg.nm_write_2.class,
               messageBody.memcachedmsg.nm_write_2.Builder.class);
           internal_static_nm_write_2_res_descriptor =
-            getDescriptor().getMessageTypes().get(9);
+            getDescriptor().getMessageTypes().get(10);
           internal_static_nm_write_2_res_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_nm_write_2_res_descriptor,

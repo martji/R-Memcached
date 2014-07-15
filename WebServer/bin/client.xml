@@ -9,20 +9,13 @@
 </client>
 <client>
 	<id>0001</id>
-	<host>192.168.3.243</host>
-	<request_port>10000</request_port>
-	<client_port>30000</client_port>
-	<memcached>192.168.3.243:20000</memcached>
-</client>
-<client>
-	<id>0002</id>
 	<host>192.168.3.244</host>
 	<request_port>10000</request_port>
 	<client_port>30000</client_port>
 	<memcached>192.168.3.244:20000</memcached>
 </client>
 <client>
-	<id>0003</id>
+	<id>0002</id>
 	<host>192.168.3.218</host>
 	<request_port>10000</request_port>
 	<client_port>30000</client_port>

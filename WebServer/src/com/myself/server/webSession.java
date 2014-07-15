@@ -147,54 +147,12 @@ public class webSession implements Runnable
 			nr_Connected_mem_back msgLite= msg.getMessageLite();
 			addClientChannel(msgLite.getMemID(), e.getChannel());			
 		}
-			break;
-		case nc_read:
-		{
-			nc_Read msgBody = msg.getMessageLite();
-			nr_Read.Builder builder = nr_Read.newBuilder();
-			builder.setClientid(e.getChannel().getId());
-			builder.setKey(msgBody.getKey());
-			
-			NetMsg sendMsg = NetMsg.newMessage();
-			sendMsg.setMessageLite(builder);
-			sendMsg.setMsgID(EMSGID.nr_read);			
-			
-			if(randSendMsg2Memcached(gethashMem(msgBody.getKey()), sendMsg) == false)
-			{
-				DBMessage dbMsg=new DBMessage();
-				dbMsg.ClientID = e.getChannel().getId();
-				dbMsg.mode = DBMessage.mode_query;
-				dbMsg.key = msgBody.getKey();
-				DBSession.getInstance().addDBMessage(dbMsg);
-			}
-		}
-		break;
-		case nc_write:
-		{
-			nc_Write msgBody = msg.getMessageLite();
-			
-			nr_write.Builder builder = nr_write.newBuilder();
-			builder.setKey(msgBody.getKey());
-			builder.setValue(msgBody.getValue());				
-			
-			NetMsg send = NetMsg.newMessage();
-			send.setMessageLite(builder);
-			send.setMsgID(EMSGID.nr_write);
-			if(SendMsg2Leader(gethashMem(msgBody.getKey()), send) == false)
-			{
-				DBMessage dbMsg=new DBMessage();
-				dbMsg.ClientID = e.getChannel().getId();
-				dbMsg.mode = DBMessage.mode_set;
-				dbMsg.key = msgBody.getKey();
-				dbMsg.value = msgBody.getValue();
-				DBSession.getInstance().addDBMessage(dbMsg);
-			}
-		}
-		break;
-		
+			break;		
 		case nr_read_res:
 		{
 			nr_Read_res msgBody = msg.getMessageLite();
+			System.out.println("key:"+msgBody.getKey()+" value:"+msgBody.getValue());
+			
 //			System.out.println(String.valueOf((System.nanoTime()-msgBody.getTime())/1000000.0));
 //			log.log(Priority.INFO, String.valueOf((System.nanoTime()-msgBody.getTime())/1000000.0));
 //			log.log(Level.INFO, String.valueOf((System.nanoTime()-msgBody.getTime())/1000000.0));
@@ -204,15 +162,15 @@ public class webSession implements Runnable
 //				totalTime = System.currentTimeMillis();
 //			}
 			
-			totalTime += System.nanoTime()-msgBody.getTime();
-			ticks++;
-			if (ticks == 1000)
-			{
-				System.out.println(totalTime/1000000000.0f);
-				
-				totalTime = 0;
-				ticks = 0;
-			}
+//			totalTime += System.nanoTime()-msgBody.getTime();
+//			ticks++;
+//			if (ticks == 1000)
+//			{
+//				System.out.println(totalTime/1000000000.0f);
+//				
+//				totalTime = 0;
+//				ticks = 0;
+//			}
 //			if (msgBody.getValue().isEmpty())  //读数据库
 //			{
 //				DBMessage dbMsg=new DBMessage();
@@ -238,6 +196,8 @@ public class webSession implements Runnable
 		case nr_write_res:
 		{
 			nr_write_res msgBody = msg.getMessageLite();
+		    System.out.println("key:"+msgBody.getKey()+" value:"+msgBody.getValue());
+			
 			//DBMessage dbMsg = new DBMessage();  //异步写数据库
 			//dbMsg.mode = DBMessage.mode_set;
 			//dbMsg.key = msgBody.getKey();
@@ -254,15 +214,16 @@ public class webSession implements Runnable
 //			{
 //				totalTime = System.currentTimeMillis();
 //			}
-			totalTime += System.nanoTime()-msgBody.getTime();
-			ticks++;
-			if (ticks == 1000)
-			{
-				System.out.println(totalTime/1000000000.0f);
-				
-				totalTime = 0;
-				ticks = 0;
-			}
+			
+//			totalTime += System.nanoTime()-msgBody.getTime();
+//			ticks++;
+//			if (ticks == 1000)
+//			{
+//				System.out.println(totalTime/1000000000.0f);
+//				
+//				totalTime = 0;
+//				ticks = 0;
+//			}
 			
 //			nc_WriteRes.Builder builder = nc_WriteRes.newBuilder();
 //			builder.setKey(msgBody.getKey());
