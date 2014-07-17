@@ -7,6 +7,7 @@ import messageBody.clientMsg.nc_Write;
 import messageBody.memcachedmsg.nm_Connected;
 import messageBody.requestMsg.nr_Connected_mem_back;
 import messageBody.requestMsg.nr_Read_res;
+import messageBody.requestMsg.nr_Stats_res;
 import messageBody.requestMsg.nr_write_res;
 
 import com.google.protobuf.GeneratedMessage;
@@ -21,6 +22,7 @@ public class RegisterHandler
 		initHandler(EMSGID.nm_connected.ordinal(), nm_Connected.class);
 		initHandler(EMSGID.nr_connected_mem_back.ordinal(), nr_Connected_mem_back.class);
 		initHandler(EMSGID.nr_read_res.ordinal(), nr_Read_res.class);
+		initHandler(EMSGID.nr_stats_res.ordinal(), nr_Stats_res.class);
 		initHandler(EMSGID.nr_write_res.ordinal(), nr_write_res.class);
 	}	
 	

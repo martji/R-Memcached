@@ -34,6 +34,7 @@ public class ContextObjectInputStream extends ObjectInputStream {
 		mLoader = loader;
 	}
 	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	protected Class resolveClass( ObjectStreamClass v ) throws IOException, ClassNotFoundException {
 		if ( mLoader == null )
 			return super.resolveClass( v );

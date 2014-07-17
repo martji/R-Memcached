@@ -90,6 +90,7 @@ import org.apache.log4j.Logger;
 public class NativeHandler {
 
 	// logger
+	@SuppressWarnings("unused")
 	private static Logger log = Logger.getLogger( NativeHandler.class.getName() );
 
 	/** 

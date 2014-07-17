@@ -27,6 +27,7 @@ import java.io.*;
  * @author <a href="mailto:burton@rojo.com">Kevin Burton</a>
  * @version 1.2
  */
+@SuppressWarnings("serial")
 public class NestedIOException extends IOException {
 
     /**

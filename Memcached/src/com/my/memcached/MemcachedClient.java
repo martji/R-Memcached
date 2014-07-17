@@ -1218,6 +1218,7 @@ public class MemcachedClient {
 					}
 					else {
 						// deserialize if the data is serialized
+						@SuppressWarnings("resource")
 						ContextObjectInputStream ois =
 							new ContextObjectInputStream( new ByteArrayInputStream( buf ), classLoader );
 						try {
@@ -1306,6 +1307,7 @@ public class MemcachedClient {
 	 * @param asString if true, and if we are using NativehHandler, return string val
 	 * @throws IOException if io exception happens while reading from socket
 	 */
+	@SuppressWarnings("unused")
 	private void loadMulti( LineInputStream input, Map<String,Object> hm, boolean asString ) throws IOException {
 
 		while ( true ) {
@@ -1389,6 +1391,7 @@ public class MemcachedClient {
 				}
 				else {
 					// deserialize if the data is serialized
+					@SuppressWarnings("resource")
 					ContextObjectInputStream ois =
 						new ContextObjectInputStream( new ByteArrayInputStream( buf ), classLoader );
 					try {
@@ -1506,11 +1509,13 @@ public class MemcachedClient {
 		return success;
 	}
 
+	@SuppressWarnings("rawtypes")
 	public Map stats() 
 	{
 		return stats("stats\r\n", STATS );
 	}	
 
+	@SuppressWarnings("rawtypes")
 	public Map statsItems() {
 		return stats("stats items\r\n", STATS );
 	}
@@ -1526,6 +1531,7 @@ public class MemcachedClient {
 	 * @param servers string array of servers to retrieve stats from, or all if this is null
 	 * @return Stats map
 	 */
+	@SuppressWarnings("rawtypes")
 	public Map statsSlabs() {
 		return stats( "stats slabs\r\n", STATS );
 	}
@@ -1542,10 +1548,12 @@ public class MemcachedClient {
 	 * @param slabNumber the item number of the cache dump
 	 * @return Stats map
 	 */
+	@SuppressWarnings("rawtypes")
 	public Map statsCacheDump(int slabNumber, int limit ) {
 		return stats(String.format( "stats cachedump %d %d\r\n", slabNumber, limit ), ITEM );
 	}
 		
+	@SuppressWarnings("rawtypes")
 	private Map stats(String command, String lineStart ) {
 
 		if ( command == null || command.trim().equals( "" ) ) {

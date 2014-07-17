@@ -33,9 +33,11 @@ public class WebServerMain
 	private static class bench extends Thread 
 	{
 		private int runs;
+		@SuppressWarnings("unused")
 		private int threadNum;
 		private String object;
 		private String[] keys;
+		@SuppressWarnings("unused")
 		private int size;
 		private int nums;
 		private double rate;

@@ -1,10 +1,6 @@
 package com.myself.memcached;
 
-
 import messageBody.requestMsg.nr_Connected_mem;
-import messageBody.requestMsg.nr_Read_res;
-import messageBody.requestMsg.nr_write_res;
-
 import org.jboss.netty.channel.ChannelHandlerContext;
 import org.jboss.netty.channel.ChannelStateEvent;
 import org.jboss.netty.channel.ExceptionEvent;

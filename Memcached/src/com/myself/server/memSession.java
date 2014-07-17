@@ -1,7 +1,7 @@
 package com.myself.server;
 
-import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
@@ -15,6 +15,8 @@ import messageBody.memcachedmsg.nm_write_2;
 import messageBody.requestMsg.nr_Connected_mem_back;
 import messageBody.requestMsg.nr_Read;
 import messageBody.requestMsg.nr_Read_res;
+import messageBody.requestMsg.nr_Stats;
+import messageBody.requestMsg.nr_Stats_res;
 import messageBody.requestMsg.nr_write;
 import messageBody.requestMsg.nr_write_res;
 
@@ -154,6 +156,24 @@ public class memSession implements Runnable {
 		NetMsg msg = (NetMsg) e.getMessage();
 
 		switch (msg.getMsgID()) {
+		case nr_stats: {
+			nr_Stats msgLite = msg.getMessageLite();
+			@SuppressWarnings("rawtypes")
+			Map stats = client.stats();
+			if (stats != null) {
+				nr_Stats_res.Builder builder = nr_Stats_res.newBuilder();
+				builder.setKey("");
+				builder.setValue(stats.toString());
+				builder.setTime(msgLite.getTime());
+
+				NetMsg send = NetMsg.newMessage();
+				send.setMessageLite(builder);
+				send.setMsgID(EMSGID.nr_stats_res);
+				webServeChannel.write(send);
+				return;
+			}
+		}
+			break;
 		case nm_connected: {
 			nm_Connected msgLite = msg.getMessageLite();
 			addClientChannel(msgLite.getNum(), e.getChannel());

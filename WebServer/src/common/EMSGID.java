@@ -21,5 +21,8 @@ public enum EMSGID
 	nm_read,
 	nm_write_1,
 	nm_write_1_res,
-	nm_write_2
+	nm_write_2,
+	
+	nr_stats,
+	nr_stats_res
 }

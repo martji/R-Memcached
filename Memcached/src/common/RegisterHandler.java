@@ -11,6 +11,7 @@ import messageBody.memcachedmsg.nm_write_1_res;
 import messageBody.memcachedmsg.nm_write_2;
 import messageBody.requestMsg.nr_Connected_mem;
 import messageBody.requestMsg.nr_Read;
+import messageBody.requestMsg.nr_Stats;
 import messageBody.requestMsg.nr_write;
 
 import com.google.protobuf.GeneratedMessage;
@@ -23,6 +24,7 @@ public class RegisterHandler
 		initHandler(EMSGID.nm_connected.ordinal(), nm_Connected.class);
 		initHandler(EMSGID.nm_connected_mem_back.ordinal(), nm_Connected_mem_back.class);
 		initHandler(EMSGID.nr_connected_mem.ordinal(), nr_Connected_mem.class);
+		initHandler(EMSGID.nr_stats.ordinal(), nr_Stats.class);
 		initHandler(EMSGID.nr_read.ordinal(), nr_Read.class);
 		initHandler(EMSGID.nm_read.ordinal(), nm_read.class);
 		initHandler(EMSGID.nm_read_recovery.ordinal(), nm_read_recovery.class);

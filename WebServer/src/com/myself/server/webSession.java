@@ -6,22 +6,18 @@ import java.util.Map.Entry;
 import java.util.Random;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-import messageBody.clientMsg.nc_Read;
-import messageBody.clientMsg.nc_Write;
 import messageBody.memcachedmsg.nm_Connected;
 import messageBody.memcachedmsg.nm_Connected_web_back;
 import messageBody.requestMsg.nr_Connected_mem_back;
 import messageBody.requestMsg.nr_Read;
 import messageBody.requestMsg.nr_Read_res;
+import messageBody.requestMsg.nr_Stats_res;
 import messageBody.requestMsg.nr_write;
 import messageBody.requestMsg.nr_write_res;
 import org.apache.log4j.Logger;
-import org.apache.log4j.Priority;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.MessageEvent;
 import org.jboss.netty.util.internal.ConcurrentHashMap;
-
-import com.myself.database.DBMessage;
 import com.myself.memcached.MemcachedMgr;
 import common.EMSGID;
 
@@ -147,7 +143,12 @@ public class webSession implements Runnable
 			nr_Connected_mem_back msgLite= msg.getMessageLite();
 			addClientChannel(msgLite.getMemID(), e.getChannel());			
 		}
-			break;		
+			break;
+		case nr_stats_res: {
+			nr_Stats_res msgBody = msg.getMessageLite();
+			System.out.println("stats:\n"+msgBody.getValue());
+		}
+			break;
 		case nr_read_res:
 		{
 			nr_Read_res msgBody = msg.getMessageLite();
