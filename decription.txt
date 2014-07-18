@@ -7,3 +7,11 @@ martji
 1. export a runnable jar from Memcached(r-memcahced.jar)
 2. export a jar from WebServer(webserver.jar)
 3. creste a simple WebApp with webserver.jar
+
+21:33 2014/7/17
+martji
+1. add nr_stats and nr_stats_res to get memcache-server stats
+2. fix memsession and websession
+3. modify requestMsg.java
+4. modify EMSGID
+5. delete all warnings

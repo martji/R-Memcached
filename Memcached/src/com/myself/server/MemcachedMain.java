@@ -117,18 +117,13 @@ public class MemcachedMain {
 								m++;
 								localClient.client_port = Integer.decode(record
 										.getTextContent());
-							} else if (record.getNodeName().equals(
-									"request_port")) {
-								m++;
-								localClient.request_port = Integer
-										.decode(record.getTextContent());
 							} else if (record.getNodeName().equals("memcached")) {
 								m++;
 								localClient.memcached = record.getTextContent();
 							}
 						}
 					}
-					if (m == 5) {
+					if (m == 4) {
 						m_mapMemcachedClient.put(localClient.id, localClient);
 					}
 				}

@@ -11,6 +11,7 @@ import messageBody.memcachedmsg.nm_Connected_web_back;
 import messageBody.requestMsg.nr_Connected_mem_back;
 import messageBody.requestMsg.nr_Read;
 import messageBody.requestMsg.nr_Read_res;
+import messageBody.requestMsg.nr_Stats;
 import messageBody.requestMsg.nr_Stats_res;
 import messageBody.requestMsg.nr_write;
 import messageBody.requestMsg.nr_write_res;
@@ -152,7 +153,7 @@ public class webSession implements Runnable
 		case nr_read_res:
 		{
 			nr_Read_res msgBody = msg.getMessageLite();
-			System.out.println("key:"+msgBody.getKey()+" value:"+msgBody.getValue());
+//			System.out.println("key:"+msgBody.getKey()+" value:"+msgBody.getValue());
 			
 //			System.out.println(String.valueOf((System.nanoTime()-msgBody.getTime())/1000000.0));
 //			log.log(Priority.INFO, String.valueOf((System.nanoTime()-msgBody.getTime())/1000000.0));
@@ -197,7 +198,7 @@ public class webSession implements Runnable
 		case nr_write_res:
 		{
 			nr_write_res msgBody = msg.getMessageLite();
-		    System.out.println("key:"+msgBody.getKey()+" value:"+msgBody.getValue());
+//		    System.out.println("key:"+msgBody.getKey()+" value:"+msgBody.getValue());
 			
 			//DBMessage dbMsg = new DBMessage();  //Òì²½Ð´Êý¾Ý¿â
 			//dbMsg.mode = DBMessage.mode_set;
@@ -261,6 +262,16 @@ public class webSession implements Runnable
 		return true;
 	}	
 	
+	public boolean allSendMsg2Memcached(NetMsg msg){
+		for (int i = 0; i < MemcachedMgr.nCopyNode; i++) {
+			Channel eChannel = getClientChannel(i);
+			if (eChannel != null) {				
+				sendMsg(eChannel, msg);	
+			}
+		}
+		return true;
+	}
+	
 	public boolean randSendMsg2Memcached(Integer hash, NetMsg msg)
 	{
 		Random random = new Random();
@@ -306,6 +317,15 @@ public class webSession implements Runnable
 		}
 	}
 
+	public boolean stats() {
+		nr_Stats.Builder builder = nr_Stats.newBuilder();
+		builder.setTime(System.nanoTime());
+		NetMsg msg = NetMsg.newMessage();
+		msg.setMessageLite(builder);
+		msg.setMsgID(EMSGID.nr_stats);
+		allSendMsg2Memcached(msg);
+		return true;
+	}
 	
 	public boolean get(String key)
 	{

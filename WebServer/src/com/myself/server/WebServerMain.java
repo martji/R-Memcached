@@ -55,11 +55,9 @@ public class WebServerMain
 
 		public void run() 
 		{
-			try
-			{
+			try	{
 				Thread.sleep(10);
-			} catch (InterruptedException e)
-			{
+			} catch (InterruptedException e){
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
@@ -74,22 +72,16 @@ public class WebServerMain
 		public void randReadWrite(double scale)
 		{
 			Random randNum = new Random();
-			for (int i = 0; i < runs; i++) 
-			{
-				if (Math.random()<scale)
-				{
+			for (int i = 0; i < runs; i++) {
+				if (Math.random()<scale){
 					webSession.getInstance().get(keys[randNum.nextInt(nums)]);
-				}
-				else 
-				{
+				}else {
 					webSession.getInstance().set(keys[randNum.nextInt(nums)], object);
 				}
 				
-				try
-				{
+				try	{
 					Thread.sleep((long) 0.00001);
-				} catch (InterruptedException e)
-				{
+				} catch (InterruptedException e){
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
@@ -178,11 +170,7 @@ public class WebServerMain
 	                       		m++;
 	                       		localClient.client_port = Integer.decode(record.getTextContent());
 							}  
-	                       	else if (record.getNodeName().equals("request_port"))
-	                       	{
-	                       		m++;
-	                       		localClient.request_port = Integer.decode(record.getTextContent());
-							}  
+	                        
 	                       	else if (record.getNodeName().equals("memcached")) 
 	                       	{
 								m++;
@@ -190,7 +178,7 @@ public class WebServerMain
 							}
                        }
 					}
-                   if(m==5) 
+                   if(m==4) 
                    {
                 	   m_mapMemcachedClient.put(localClient.id, localClient);
                    }                   
