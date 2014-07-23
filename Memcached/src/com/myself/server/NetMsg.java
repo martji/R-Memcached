@@ -9,11 +9,14 @@ public class NetMsg
 {
 	EMSGID msgID;
 	MessageLite messageLite;
+	int nodeRoute;
 	
 	private NetMsg(){};
 	public static NetMsg newMessage()
 	{
-		return new NetMsg();
+		NetMsg msg = new NetMsg();
+		msg.setNodeRoute(0);
+		return msg;
 	}
 	
 	NetMsg(byte[] decoded, int id) throws Exception 
@@ -47,6 +50,12 @@ public class NetMsg
 	public void setMessageLite(GeneratedMessage.Builder builder) 
 	{
 		this.messageLite = builder.build();
+	}
+	public int getNodeRoute() {
+		return nodeRoute;
+	}
+	public void setNodeRoute(int nodeRoute) {
+		this.nodeRoute = nodeRoute;
 	}
 
 }

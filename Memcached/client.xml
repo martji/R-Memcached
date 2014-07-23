@@ -2,26 +2,26 @@
 <clients>
 <client>
 	<id>0000</id>
-	<host>192.168.3.201</host>
+	<host>192.168.3.224</host>
 	<client_port>30000</client_port>
-	<memcached>192.168.3.201:20000</memcached>
+	<memcached>192.168.3.224:20000</memcached>
 </client>
 <client>
 	<id>0001</id>
-	<host>192.168.3.201</host>
-	<client_port>30001</client_port>
-	<memcached>192.168.3.201:20001</memcached>
+	<host>192.168.3.204</host>
+	<client_port>30000</client_port>
+	<memcached>192.168.3.204:20000</memcached>
 </client>
 <client>
 	<id>0002</id>
-	<host>192.168.3.201</host>
-	<client_port>30002</client_port>
-	<memcached>192.168.3.201:20002</memcached>
+	<host>192.168.3.244</host>
+	<client_port>30000</client_port>
+	<memcached>192.168.3.244:20000</memcached>
 </client>
 <client>
 	<id>0003</id>
-	<host>192.168.3.201</host>
-	<client_port>30003</client_port>
-	<memcached>192.168.3.201:20003</memcached>
+	<host>192.168.3.218</host>
+	<client_port>30000</client_port>
+	<memcached>192.168.3.218:20000</memcached>
 </client>
 </clients>

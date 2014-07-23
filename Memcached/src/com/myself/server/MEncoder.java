@@ -17,10 +17,11 @@ public class MEncoder extends OneToOneEncoder
         }
         NetMsg res = (NetMsg)msg;
         byte[] data = res.getBytes();
-        int dataLength = data.length+4;
+        int dataLength = data.length+8;
         ChannelBuffer buf = ChannelBuffers.dynamicBuffer();//(2)
         buf.writeInt(dataLength);
         buf.writeInt(res.msgID.ordinal());
+        buf.writeInt(res.getNodeRoute());
         buf.writeBytes(data);
         return buf;//(3)
     }

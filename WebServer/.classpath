@@ -8,5 +8,6 @@
 	<classpathentry exported="true" kind="lib" path="lib/mysql.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/netty-3.5.7.Final.jar" sourcepath="/Memcached/lib/netty-3.9.1.Final-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/protobuf-java-2.4.1.jar"/>
+	<classpathentry kind="lib" path="lib/json-org.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

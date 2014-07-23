@@ -1,4 +1,5 @@
 package common;
+
 public enum EMSGID 
 {
 	nr_read,
@@ -13,11 +14,12 @@ public enum EMSGID
 	nm_connected_mem_back,
 	nm_connected_web_back,
 	nm_read,
-	nm_read_recovery,
+	
 	nm_write_1,
 	nm_write_1_res,
 	nm_write_2,
 	
 	nr_stats,
-	nr_stats_res
+	nr_stats_res,
+	nm_read_recovery
 }

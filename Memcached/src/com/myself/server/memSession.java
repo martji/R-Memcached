@@ -23,6 +23,7 @@ import messageBody.requestMsg.nr_write_res;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.MessageEvent;
 import org.jboss.netty.util.internal.ConcurrentHashMap;
+import org.json.JSONObject;
 
 import com.my.memcached.MemcachedClient;
 import com.myself.client.ClientMgr;
@@ -151,6 +152,10 @@ public class memSession implements Runnable {
 	public boolean removeLock(String key) {
 		return LockKeyMap.remove(key) != null;
 	}
+	
+	public int getCurrentNode() {
+		return (int) Math.pow(2, ClientMgr.getInstance().mClientNumber);
+	}
 
 	public void handle(MessageEvent e) {
 		NetMsg msg = (NetMsg) e.getMessage();
@@ -160,15 +165,17 @@ public class memSession implements Runnable {
 			nr_Stats msgLite = msg.getMessageLite();
 			@SuppressWarnings("rawtypes")
 			Map stats = client.stats();
+			JSONObject jStats = new JSONObject(stats);
 			if (stats != null) {
 				nr_Stats_res.Builder builder = nr_Stats_res.newBuilder();
 				builder.setKey("");
-				builder.setValue(stats.toString());
+				builder.setValue(jStats.toString());
 				builder.setTime(msgLite.getTime());
 
 				NetMsg send = NetMsg.newMessage();
 				send.setMessageLite(builder);
 				send.setMsgID(EMSGID.nr_stats_res);
+				send.setNodeRoute(getCurrentNode());
 				webServeChannel.write(send);
 				return;
 			}
@@ -225,7 +232,7 @@ public class memSession implements Runnable {
 				NetMsg send = NetMsg.newMessage();
 				send.setMessageLite(builder);
 				send.setMsgID(EMSGID.nr_read_res);
-
+				send.setNodeRoute(getCurrentNode());
 				webServeChannel.write(send);
 				return;
 			} else if (state == LockKey.unLock) {
@@ -239,8 +246,8 @@ public class memSession implements Runnable {
 					NetMsg send = NetMsg.newMessage();
 					send.setMessageLite(builder);
 					send.setMsgID(EMSGID.nr_read_res);
+					send.setNodeRoute(getCurrentNode());
 					webServeChannel.write(send);
-
 					return;
 				}
 			} 
@@ -251,6 +258,7 @@ public class memSession implements Runnable {
 
 			NetMsg send = NetMsg.newMessage();
 			send.setMessageLite(builder);
+			send.setNodeRoute(getCurrentNode());
 			send.setMsgID(EMSGID.nm_read);
 
 			if (sendOtherCopyMsg(gethashMem(msgLite.getKey()), send) == false) {
@@ -281,6 +289,7 @@ public class memSession implements Runnable {
 					NetMsg send = NetMsg.newMessage();
 					send.setMessageLite(builder);
 					send.setMsgID(EMSGID.nr_read_res);
+					send.setNodeRoute(getCurrentNode() + msg.getNodeRoute());
 					webServeChannel.write(send);
 					
 					nm_read_recovery.Builder builder1 = nm_read_recovery.newBuilder();
@@ -302,6 +311,7 @@ public class memSession implements Runnable {
 			NetMsg send = NetMsg.newMessage();
 			send.setMessageLite(builder);
 			send.setMsgID(EMSGID.nr_read_res);
+			send.setNodeRoute(getCurrentNode() + msg.getNodeRoute());
 
 			webServeChannel.write(send);
 		}
@@ -336,6 +346,7 @@ public class memSession implements Runnable {
 				NetMsg send2 = NetMsg.newMessage();
 				send2.setMessageLite(builder2);
 				send2.setMsgID(EMSGID.nr_write_res);
+				send2.setNodeRoute(getCurrentNode());
 				webServeChannel.write(send2);
 				return;
 			} 
@@ -355,6 +366,7 @@ public class memSession implements Runnable {
 				NetMsg send2 = NetMsg.newMessage();
 				send2.setMessageLite(builder2);
 				send2.setMsgID(EMSGID.nr_write_res);
+				send2.setNodeRoute(getCurrentNode());
 				webServeChannel.write(send2);
 				System.out.println("write lock conflict, please request again.");
 				return;
@@ -381,6 +393,7 @@ public class memSession implements Runnable {
 				NetMsg send2 = NetMsg.newMessage();
 				send2.setMessageLite(builder2);
 				send2.setMsgID(EMSGID.nr_write_res);
+				send2.setNodeRoute(getCurrentNode());
 				webServeChannel.write(send2);
 
 			}
@@ -437,6 +450,7 @@ public class memSession implements Runnable {
 					NetMsg send2 = NetMsg.newMessage();
 					send2.setMessageLite(builder2);
 					send2.setMsgID(EMSGID.nr_write_res);
+					send2.setNodeRoute(getCurrentNode() + msg.getNodeRoute());
 					webServeChannel.write(send2);
 					
 					nm_write_2.Builder builder = nm_write_2.newBuilder();
@@ -459,6 +473,7 @@ public class memSession implements Runnable {
 					NetMsg send2 = NetMsg.newMessage();
 					send2.setMessageLite(builder2);
 					send2.setMsgID(EMSGID.nr_write_res);
+					send2.setNodeRoute(getCurrentNode() + msg.getNodeRoute());
 					webServeChannel.write(send2);
 				}
 			}

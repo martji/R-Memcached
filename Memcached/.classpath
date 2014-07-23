@@ -6,6 +6,7 @@
 	<classpathentry kind="lib" path="lib/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="lib/netty-3.5.7.Final.jar" sourcepath="lib/netty-3.9.1.Final-sources.jar"/>
 	<classpathentry kind="lib" path="lib/protobuf-java-2.4.1.jar"/>
+	<classpathentry kind="lib" path="lib/json-org.jar"/>
 	<classpathentry kind="src" path="/WebServer"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>

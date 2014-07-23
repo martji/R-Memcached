@@ -1629,8 +1629,8 @@ public class MemcachedClient {
 		}
 
 		if ( sock != null ) {
-			sock.close();
-			sock = null;
+//			sock.close();
+//			sock = null;
 		}
 
 		return stats;
