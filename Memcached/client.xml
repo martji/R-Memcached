@@ -2,9 +2,9 @@
 <clients>
 <client>
 	<id>0000</id>
-	<host>192.168.3.224</host>
+	<host>192.168.3.201</host>
 	<client_port>30000</client_port>
-	<memcached>192.168.3.224:20000</memcached>
+	<memcached>192.168.3.201:20000</memcached>
 </client>
 <client>
 	<id>0001</id>

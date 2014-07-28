@@ -29,7 +29,7 @@ public class webSession implements Runnable {
 	ConcurrentLinkedQueue<MessageEvent> recvQueue = new ConcurrentLinkedQueue<MessageEvent>();
 	Map<Integer, Channel> MemcachedChannelMap = new ConcurrentHashMap<Integer, Channel>();
 	Map<Integer, Channel> RequestChannelMap = new ConcurrentHashMap<Integer, Channel>();
-	static webSession session = null;
+	public static webSession session = null;
 	
 	public Channel curChannel;
 	public long totalTime = 0;

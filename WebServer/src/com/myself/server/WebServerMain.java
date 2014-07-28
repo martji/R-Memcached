@@ -10,6 +10,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.log4j.PropertyConfigurator;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.w3c.dom.Document;
@@ -90,8 +91,14 @@ public class WebServerMain {
 			}
 		}
 	}
-
+	
 	public static void main(String[] args) {
+		for (int i =0; i< 10; i++){
+			WebServerMain.run(args);
+		}	
+	}
+
+	public static void run(String[] args) {
 		PropertyConfigurator.configure(System.getProperty("user.dir")
 				+ "/bin/log4j.properties");// 加载.properties文件
 		initConfig();
@@ -138,7 +145,7 @@ public class WebServerMain {
 			}
 		}
 		
-		System.out.println(webSession.results.length());
+		
 		try {
 			System.out.println(webSession.results.get(0));
 		} catch (JSONException e1) {
@@ -146,21 +153,25 @@ public class WebServerMain {
 		}
 		
 		webSession.getInstance().stats();
-		while (webSession.stats.size() != 4){
+		while (webSession.stats.size() != 4 || webSession.results.length() < 3000){
 			try {
 				Thread.sleep(100);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 		}
-		try {
-			JSONObject jStats = new JSONObject(webSession.stats.get(1));
-			System.out.println(jStats);
-			System.out.println(jStats.get("cmd_get"));
-			System.out.println(jStats.get("cmd_set"));
-		} catch (JSONException e) {
-			e.printStackTrace();
-		}
+		System.out.println(webSession.results.length());
+//		try {
+//			JSONObject jStats = new JSONObject(webSession.stats.get(2));
+//			System.out.println(jStats);
+//			System.out.println(jStats.get("cmd_get"));
+//			System.out.println(jStats.get("cmd_set"));
+//		} catch (JSONException e) {
+//			e.printStackTrace();
+//		}
+		requestServer.stop();
+		//webSession.session = null;
+		webSession.results = new JSONArray();
 	}
 
 	// 读取memcached client配置
