@@ -235,13 +235,19 @@ margin-left: 0;
 	border-bottom: 1px solid silver;
 	margin-bottom : 2px;
 }
-.exptitle {
+.title1 {
+	width: 100%;
+	height:34px;
 	font-size: 1.5em;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 	border-bottom: 1px solid silver;
+	background-color:#FFF;
+}
+.expout {
+	width:100%;
+	height:570px;
 }
 .paras {
-	background-color: #3FF;
 	height: 40px;
 	width: 100%;
 	font-size: 1em;
@@ -263,7 +269,7 @@ margin-left: 0;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 }
 .buttons {
-	width: 200px;
+	width: 300px;
 	float:left;
 	text-align:right;
 	margin-right:20px;
@@ -277,18 +283,17 @@ margin-left: 0;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 }
 .expcontainer {
+	background-color:#CFC;
 	font-size: 1em;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 }
 .expanel {
 	width: 49.9%;
-	background-color: #FF6;
 	height: 500px;
 	float:left;
 }
 .expmiddle {
 	width: 0.2%;
-	background-color:#FFF;
 	height: 500px;
 	float:left;
 }
@@ -299,30 +304,85 @@ margin-left: 0;
 	
 }
 .time {
-	background-color:#CFC;
 	padding-top:9px;
 	height: 30px;
 	border-bottom: 1px solid silver;
 }
+.progressContainer {
+	width: 180px; 
+	height: 14px;
+	border: solid 1px #ccc;
+	padding: 1px;
+	float:left;
+	margin-top:2px; 
+	margin-left:4px;
+	margin-right:8px;"
+}
 .data {
-	background-color:#FFC;
 	height: 460px;
+	width :100%;
+}
+.innertitle {
+	margin-left : 8px;
+	margin-top:4px;
+	font-size: 1em;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	
+}
+.innerdata {
+	margin-left : 8px;
+	margin-right : 8px;
+	margin-top:4px;
+	widtht:100%;
+	height:420px;
+	text-align:center;
+}
+.resultarea {
+	width:100%;
+	height:100%;
+	font-size: 1em;
+	overflow-y:visible;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 }
 
 .result {
 }
-.resulttitle {
-	width: 100%;
-	font-size: 1.5em;
-	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
-	border-bottom: 1px solid silver;
-	margin-bottom : 2px;
-}
+
 .resultout {
 	border-bottom: 1px solid silver;
 	margin-bottom : 2px;
 	height:400px;
-	background-color:#FFC;
+	background-color:#FFF;
+}
+.introduce {
+	border-bottom: 1px solid silver;
+	margin-bottom : 2px;
+	height:400px;
+	background-color:#FFF;
+	font-size: 1em;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+}
+.innerout {
+	margin-top:10px;
+	margin-bottom:10px;
+	width:100%;
+	height:380px;
+}
+.nodepanel {
+	margin-top:10px;
+	margin-top:10px;
+	width: 49%;
+	height: 380px;
+	float:left;
+}
+.innernode {
+	width:100%;
+	height:100%;
+}
+.nodemiddle {
+	width: 2%;
+	height: 400px;
+	float:left;
 }
 
 .zeroMargin_desktop {
