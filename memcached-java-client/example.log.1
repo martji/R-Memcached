@@ -1,0 +1,874 @@
+DEBUG Thread-8 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) from busy pool for host: 192.168.3.204:20000
+        DEBUG Thread-8 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.204,port=20000,localport=55705] to avail pool for host: 192.168.3.204:20000
+        DEBUG MaintThread com.meetup.memcached.SockIOPool - ++++ Starting self maintenance....
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55620] for host: 192.168.3.218:20000
+        DEBUG Thread-8 com.meetup.memcached.SockIOPool - cache socket pick 193 null
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.244:20000) to busy pool ... socket: Socket[addr=/192.168.3.244,port=20000,localport=55612]
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache choose 192.168.3.244:20000 for 651
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 651
+
+        DEBUG Thread-8 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55617]
+        DEBUG Thread-8 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 193
+        DEBUG Thread-8 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 193
+
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55620]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55620] to avail pool for host: 192.168.3.218:20000
+        DEBUG MaintThread com.meetup.memcached.SockIOPool - ++++ Size of avail pool for host (192.168.3.218:20000) = 9
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 245 null
+        DEBUG MaintThread com.meetup.memcached.SockIOPool - ++++ Size of avail pool for host (192.168.3.224:20000) = 10
+        DEBUG MaintThread com.meetup.memcached.SockIOPool - ++++ Size of avail pool for host (192.168.3.244:20000) = 9
+        DEBUG MaintThread com.meetup.memcached.SockIOPool - ++++ Size of avail pool for host (192.168.3.204:20000) = 11
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55656]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 337
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 337
+
+        DEBUG Thread-4 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-4 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 587
+        DEBUG Thread-4 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 587
+
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55690] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool - cache socket pick 275 null
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55659]
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 275
+        DEBUG Thread-7 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 275
+
+        DEBUG MaintThread com.meetup.memcached.SockIOPool - ++++ Size of avail pool for host (192.168.3.218:20000) = 9
+        DEBUG MaintThread com.meetup.memcached.SockIOPool - ++++ Size of avail pool for host (192.168.3.224:20000) = 8
+        DEBUG MaintThread com.meetup.memcached.SockIOPool - ++++ Size of avail pool for host (192.168.3.244:20000) = 9
+        DEBUG MaintThread com.meetup.memcached.SockIOPool - ++++ Size of avail pool for host (192.168.3.204:20000) = 11
+        DEBUG MaintThread com.meetup.memcached.SockIOPool - ++++ Size of busy pool for host (192.168.3.218:20000)  = 2
+        DEBUG MaintThread com.meetup.memcached.SockIOPool - ++++ Size of busy pool for host (192.168.3.224:20000)  = 2
+        DEBUG MaintThread com.meetup.memcached.SockIOPool - ++++ Size of busy pool for host (192.168.3.204:20000)  = 0
+        DEBUG MaintThread com.meetup.memcached.SockIOPool - ++++ Size of busy pool for host (192.168.3.244:20000)  = 1
+        DEBUG MaintThread com.meetup.memcached.SockIOPool - +++ ending self maintenance.
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 651 32 64
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ key: 651
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-8 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 193 32 64
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55690]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 245
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        DEBUG Thread-8 com.meetup.memcached.MemcachedClient - ++++ key: 193
+        DEBUG Thread-8 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-8 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.244,port=20000,localport=55612]) as closed and available to return to avail pool
+        DEBUG Thread-7 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 275 32 64
+        DEBUG Thread-7 com.meetup.memcached.MemcachedClient - ++++ key: 275
+        DEBUG Thread-7 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-7 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 337 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 337
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-7 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-7 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) as closed and available to return to avail pool
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55659] for host: 192.168.3.224:20000
+        DEBUG Thread-4 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 587 32 64
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.244,port=20000,localport=55612] for host: 192.168.3.244:20000
+        DEBUG Thread-8 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-8 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-4 com.meetup.memcached.MemcachedClient - ++++ key: 587
+        DEBUG Thread-4 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-4 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55656]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55656] for host: 192.168.3.218:20000
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55659] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-4 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-4 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-4 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) as closed and available to return to avail pool
+        DEBUG Thread-4 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55697] for host: 192.168.3.224:20000
+        DEBUG Thread-8 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55617]) as closed and available to return to avail pool
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool - cache socket pick 173 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55656]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55656] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-8 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55617] for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 138 null
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.244,port=20000,localport=55612]) from busy pool for host: 192.168.3.244:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.244,port=20000,localport=55612] to avail pool for host: 192.168.3.244:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.244:20000) to busy pool ... socket: Socket[addr=/192.168.3.244,port=20000,localport=55612]
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache socket pick 560 null
+        DEBUG Thread-8 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55617]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-8 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55617] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.244:20000 for 138
+        DEBUG Thread-8 com.meetup.memcached.SockIOPool - cache socket pick 613 null
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 138
+
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.204:20000) to busy pool ... socket: Socket[addr=/192.168.3.204,port=20000,localport=55705]
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool - cache choose 192.168.3.204:20000 for 173
+        DEBUG Thread-4 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-4 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55697] to avail pool for host: 192.168.3.224:20000
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 245 32 0 64
+ (STORED)
+        DEBUG Thread-7 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 173
+
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 245
+        DEBUG Thread-4 com.meetup.memcached.SockIOPool - cache socket pick 138 null
+        DEBUG Thread-8 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-8 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 613
+        DEBUG Thread-8 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 613
+
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) as closed and available to return to avail pool
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55617]
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 560
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55690] for host: 192.168.3.218:20000
+        DEBUG Thread-4 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.244:20000) to busy pool ... socket: Socket[addr=/192.168.3.244,port=20000,localport=55610]
+        DEBUG Thread-4 com.meetup.memcached.SockIOPool - cache choose 192.168.3.244:20000 for 138
+        DEBUG Thread-4 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 138
+
+        INFO Thread-9 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55690] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 138 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 138
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 611 null
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.244:20000) to busy pool ... socket: Socket[addr=/192.168.3.244,port=20000,localport=55677]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.244:20000 for 611
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 611
+
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.244,port=20000,localport=55612]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.244,port=20000,localport=55612] for host: 192.168.3.244:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.244,port=20000,localport=55612]) from busy pool for host: 192.168.3.244:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.244,port=20000,localport=55612] to avail pool for host: 192.168.3.244:20000
+        DEBUG Thread-8 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 613 32 64
+        DEBUG Thread-8 com.meetup.memcached.MemcachedClient - ++++ key: 613
+        DEBUG Thread-8 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-4 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 138 32 64
+        DEBUG Thread-7 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 173 32 64
+        DEBUG Thread-7 com.meetup.memcached.MemcachedClient - ++++ key: 173
+        DEBUG Thread-7 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-7 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-4 com.meetup.memcached.MemcachedClient - ++++ key: 138
+        DEBUG Thread-4 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-4 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-4 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-4 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-4 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.244,port=20000,localport=55610]) as closed and available to return to avail pool
+        DEBUG Thread-4 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.244,port=20000,localport=55610] for host: 192.168.3.244:20000
+        DEBUG Thread-4 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.244,port=20000,localport=55610]) from busy pool for host: 192.168.3.244:20000
+        DEBUG Thread-4 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.244,port=20000,localport=55610] to avail pool for host: 192.168.3.244:20000
+        DEBUG Thread-8 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 738 null
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 611 32 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ key: 611
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-8 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-8 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-8 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) as closed and available to return to avail pool
+        DEBUG Thread-8 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55697] for host: 192.168.3.224:20000
+        INFO Thread-9 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 560 32 0 64
+ (STORED)
+        INFO Thread-9 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 560
+        DEBUG Thread-7 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-7 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) as closed and available to return to avail pool
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.204,port=20000,localport=55705] for host: 192.168.3.204:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55617]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.244,port=20000,localport=55677]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.244,port=20000,localport=55677] for host: 192.168.3.244:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55659]
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55617] for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 738
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 738
+
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.244,port=20000,localport=55677]) from busy pool for host: 192.168.3.244:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.244,port=20000,localport=55677] to avail pool for host: 192.168.3.244:20000
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) from busy pool for host: 192.168.3.204:20000
+        DEBUG Thread-7 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.204,port=20000,localport=55705] to avail pool for host: 192.168.3.204:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 764 null
+        DEBUG Thread-8 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-8 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55697] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.204:20000) to busy pool ... socket: Socket[addr=/192.168.3.204,port=20000,localport=55705]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.204:20000 for 764
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 764
+
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55617]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55617] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache socket pick 349 null
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 738 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 738
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 349
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 349
+
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55659] for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55659] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 903 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55659]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 903
+        INFO Thread-2 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 764 32 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ key: 764
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.204,port=20000,localport=55705] for host: 192.168.3.204:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) from busy pool for host: 192.168.3.204:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.204,port=20000,localport=55705] to avail pool for host: 192.168.3.204:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 744 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55690]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 744
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 744
+
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 349 32 64
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ key: 349
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) as closed and available to return to avail pool
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55697] for host: 192.168.3.224:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55697] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache socket pick 531 null
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55617]
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 531
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 531
+
+        INFO Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 903 32 0 64
+ (STORED)
+        INFO Thread-2 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 903
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55659] for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55659] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 924 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55620]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 924
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 924
+
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 744 32 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ key: 744
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55690] for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55690] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 665 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.204:20000) to busy pool ... socket: Socket[addr=/192.168.3.204,port=20000,localport=55705]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.204:20000 for 665
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 531 32 64
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ key: 531
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55617]) as closed and available to return to avail pool
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55617] for host: 192.168.3.218:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55617]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55617] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache socket pick 153 null
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55690]
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 153
+        INFO Thread-9 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 924 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 924
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55620]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55620] for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55620]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55620] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 263 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55617]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 263
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 263
+
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 665 32 0 64
+ (STORED)
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 665
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.204,port=20000,localport=55705] for host: 192.168.3.204:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) from busy pool for host: 192.168.3.204:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.204,port=20000,localport=55705] to avail pool for host: 192.168.3.204:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 241 null
+        INFO Thread-9 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 153 32 0 64
+ (STORED)
+        INFO Thread-9 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 153
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55656]
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 263 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 263
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55690] for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55617]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55617] for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 241
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 241
+
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55690] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55617]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55617] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache socket pick 473 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 391 null
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 473
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 473
+
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55690]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 391
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 391
+
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 241 32 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ key: 241
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55656]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55656] for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55656]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55656] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 116 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.244:20000) to busy pool ... socket: Socket[addr=/192.168.3.244,port=20000,localport=55612]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.244:20000 for 116
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 391 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 391
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 473 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ key: 473
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55690] for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55690] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 959 null
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) as closed and available to return to avail pool
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55697] for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.204:20000) to busy pool ... socket: Socket[addr=/192.168.3.204,port=20000,localport=55705]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.204:20000 for 959
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 959
+
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55697] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache socket pick 437 null
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 437
+        INFO Thread-9 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 116 32 0 64
+ (STORED)
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 116
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.244,port=20000,localport=55612]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.244,port=20000,localport=55612] for host: 192.168.3.244:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.244,port=20000,localport=55612]) from busy pool for host: 192.168.3.244:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.244,port=20000,localport=55612] to avail pool for host: 192.168.3.244:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 176 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55659]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 176
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 959 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 959
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.204,port=20000,localport=55705] for host: 192.168.3.204:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) from busy pool for host: 192.168.3.204:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.204,port=20000,localport=55705] to avail pool for host: 192.168.3.204:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 631 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55595]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 631
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 631
+
+        INFO Thread-9 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 437 32 0 64
+ (STORED)
+        INFO Thread-9 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 437
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) as closed and available to return to avail pool
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55697] for host: 192.168.3.224:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55697] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache socket pick 972 null
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 972
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 972
+
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 631 32 64
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 176 32 0 64
+ (STORED)
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 176
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 631
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55659] for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55595]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55595] for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 972 32 64
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ key: 972
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55659] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-9 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 792 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55595]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55595] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) as closed and available to return to avail pool
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55697] for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 903 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55659]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 792
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 792
+
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55595]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 903
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 903
+
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55697] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache socket pick 555 null
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.204:20000) to busy pool ... socket: Socket[addr=/192.168.3.204,port=20000,localport=55705]
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - cache choose 192.168.3.204:20000 for 555
+        INFO Thread-9 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 903 32 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 792 32 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ key: 792
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 903
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55659] for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55659] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55595]) as closed and available to return to avail pool
+        INFO Thread-9 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 555 32 0 64
+ (STORED)
+        INFO Thread-9 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 555
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55595] for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55595]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55595] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 344 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 238 null
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55690]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 344
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55617]
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.204,port=20000,localport=55705] for host: 192.168.3.204:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 238
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 238
+
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 344
+
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) from busy pool for host: 192.168.3.204:20000
+        DEBUG Thread-9 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.204,port=20000,localport=55705] to avail pool for host: 192.168.3.204:20000
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 238 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 238
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 344 32 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ key: 344
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55617]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55617] for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55617]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55617] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55690] for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55690] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 710 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 705 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.244:20000) to busy pool ... socket: Socket[addr=/192.168.3.244,port=20000,localport=55612]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.244:20000 for 710
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 705
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 705
+
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 710
+
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 705 32 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ key: 705
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 710 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 710
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55697] for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55697] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.244,port=20000,localport=55612]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.244,port=20000,localport=55612] for host: 192.168.3.244:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.244,port=20000,localport=55612]) from busy pool for host: 192.168.3.244:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.244,port=20000,localport=55612] to avail pool for host: 192.168.3.244:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 530 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 362 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.244:20000) to busy pool ... socket: Socket[addr=/192.168.3.244,port=20000,localport=55612]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.244:20000 for 530
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 530
+
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55690]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 362
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 362
+
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 530 32 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ key: 530
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 362 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 362
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.244,port=20000,localport=55612]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.244,port=20000,localport=55612] for host: 192.168.3.244:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.244,port=20000,localport=55612]) from busy pool for host: 192.168.3.244:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.244,port=20000,localport=55612] to avail pool for host: 192.168.3.244:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55690] for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55690] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 281 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 67 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55690]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 281
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 281
+
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.204:20000) to busy pool ... socket: Socket[addr=/192.168.3.204,port=20000,localport=55705]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.204:20000 for 67
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 67
+
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 281 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 67 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 67
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ key: 281
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.204,port=20000,localport=55705] for host: 192.168.3.204:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) from busy pool for host: 192.168.3.204:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.204,port=20000,localport=55705] to avail pool for host: 192.168.3.204:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55690] for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55690] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 341 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 514 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 341
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55659]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 514
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 341
+
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 341 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 341
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 514 32 0 64
+ (STORED)
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 514
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55697] for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55697] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55659] for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 270 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55659] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55690]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 270
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 270
+
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 551 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.204:20000) to busy pool ... socket: Socket[addr=/192.168.3.204,port=20000,localport=55705]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.204:20000 for 551
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 270 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 270
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55690] for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55690] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 286 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 286
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 286
+
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 551 32 0 64
+ (STORED)
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 551
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.204,port=20000,localport=55705] for host: 192.168.3.204:20000
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 286 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 286
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) from busy pool for host: 192.168.3.204:20000
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.204,port=20000,localport=55705] to avail pool for host: 192.168.3.204:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55697] for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55697] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 235 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 811 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 235
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55659]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 811
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 811
+
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 811 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 811
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55659] for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55659] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 464 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.244:20000) to busy pool ... socket: Socket[addr=/192.168.3.244,port=20000,localport=55612]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.244:20000 for 464
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 464
+
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 235 32 0 64
+ (STORED)
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 235
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55697] for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55697] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 741 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 741
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 741
+
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 464 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 464
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.244,port=20000,localport=55612]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.244,port=20000,localport=55612] for host: 192.168.3.244:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.244,port=20000,localport=55612]) from busy pool for host: 192.168.3.244:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.244,port=20000,localport=55612] to avail pool for host: 192.168.3.244:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 424 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.244:20000) to busy pool ... socket: Socket[addr=/192.168.3.244,port=20000,localport=55612]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.244:20000 for 424
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 424
+
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 741 32 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ key: 741
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55697] for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55697] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 516 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.244:20000) to busy pool ... socket: Socket[addr=/192.168.3.244,port=20000,localport=55610]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.244:20000 for 516
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 424 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 424
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.244,port=20000,localport=55612]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.244,port=20000,localport=55612] for host: 192.168.3.244:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.244,port=20000,localport=55612]) from busy pool for host: 192.168.3.244:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.244,port=20000,localport=55612] to avail pool for host: 192.168.3.244:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 990 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 990
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 990
+
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 990 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 990
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 516 32 0 64
+ (STORED)
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 516
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55697] for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55697] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.244,port=20000,localport=55610]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 484 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.244,port=20000,localport=55610] for host: 192.168.3.244:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 484
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 484
+
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.244,port=20000,localport=55610]) from busy pool for host: 192.168.3.244:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.244,port=20000,localport=55610] to avail pool for host: 192.168.3.244:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 309 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55659]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 309
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 309
+
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 309 32 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ key: 309
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 484 32 64
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ key: 484
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-2 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55659] for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55659] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55697] for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55697] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 617 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 801 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 617
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.204:20000) to busy pool ... socket: Socket[addr=/192.168.3.204,port=20000,localport=55705]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.204:20000 for 801
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 617
+
+        INFO Thread-2 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 617 32 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ key: 617
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55697] for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55697] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 964 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.218:20000) to busy pool ... socket: Socket[addr=/192.168.3.218,port=20000,localport=55690]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.218:20000 for 964
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        INFO Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 801 32 0 64
+ (STORED)
+        INFO Thread-2 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 801
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.204,port=20000,localport=55705] for host: 192.168.3.204:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.204,port=20000,localport=55705]) from busy pool for host: 192.168.3.204:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.204,port=20000,localport=55705] to avail pool for host: 192.168.3.204:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 822 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 822
+        INFO Thread-2 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 964 32 0 64
+ (STORED)
+        INFO Thread-5 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 964
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.218,port=20000,localport=55690] for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.218,port=20000,localport=55690]) from busy pool for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.218,port=20000,localport=55690] to avail pool for host: 192.168.3.218:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache socket pick 558 null
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55659]
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 558
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ memcache get command: get 558
+
+        INFO Thread-2 com.meetup.memcached.MemcachedClient - ++++ memcache cmd (result code): set 822 32 0 64
+ (STORED)
+        INFO Thread-2 com.meetup.memcached.MemcachedClient - ++++ data successfully stored for key: 822
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) as closed and available to return to avail pool
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55697] for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55697]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55697] to avail pool for host: 192.168.3.224:20000
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache socket pick 936 null
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - ++++ moving socket for host (192.168.3.224:20000) to busy pool ... socket: Socket[addr=/192.168.3.224,port=20000,localport=55697]
+        DEBUG Thread-2 com.meetup.memcached.SockIOPool - cache choose 192.168.3.224:20000 for 936
+        INFO Thread-2 com.meetup.memcached.MemcachedClient - Storing with native handler...
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: VALUE 558 32 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ key: 558
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ flags: 32
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ length: 64
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ line: END
+        DEBUG Thread-5 com.meetup.memcached.MemcachedClient - ++++ finished reading from cache server
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool$SockIO - ++++ marking socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) as closed and available to return to avail pool
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ calling check-in on socket: Socket[addr=/192.168.3.224,port=20000,localport=55659] for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ removing socket (Socket[addr=/192.168.3.224,port=20000,localport=55659]) from busy pool for host: 192.168.3.224:20000
+        DEBUG Thread-5 com.meetup.memcached.SockIOPool - ++++ returning socket (Socket[addr=/192.168.3.224,port=20000,localport=55659] to avail pool for host: 192.168.3.224:20000
+        

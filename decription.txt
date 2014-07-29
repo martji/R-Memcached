@@ -15,3 +15,12 @@ martji
 3. modify requestMsg.java
 4. modify EMSGID
 5. delete all warnings
+
+14:19 2014/7/28
+martji
+1. add R-Memcahced webproject
+2. bug fix: change the session in webSession.java to public
+
+15:04 2014/7/29
+martji
+1. add MemcachedServer in project
