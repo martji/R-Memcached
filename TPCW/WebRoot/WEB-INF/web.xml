@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<servlet>
+    <servlet-name>TPCW_admin_request_servlet</servlet-name>
+    <servlet-class>cn.org.act.sdp.tpcw.TPCW_admin_request_servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>TPCW_admin_request_servlet</servlet-name>
+    <url-pattern>/TPCW_admin_request_servlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>TPCW_admin_response_servlet</servlet-name>
+    <servlet-class>cn.org.act.sdp.tpcw.TPCW_admin_response_servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>TPCW_admin_response_servlet</servlet-name>
+    <url-pattern>/TPCW_admin_response_servlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>TPCW_best_sellers_servlet</servlet-name>
+    <servlet-class>cn.org.act.sdp.tpcw.TPCW_best_sellers_servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>TPCW_best_sellers_servlet</servlet-name>
+    <url-pattern>/TPCW_best_sellers_servlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>TPCW_buy_confirm_servlet</servlet-name>
+    <servlet-class>cn.org.act.sdp.tpcw.TPCW_buy_confirm_servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>TPCW_buy_confirm_servlet</servlet-name>
+    <url-pattern>/TPCW_buy_confirm_servlet</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    <servlet-name>TPCW_buy_request_servlet</servlet-name>
+    <servlet-class>cn.org.act.sdp.tpcw.TPCW_buy_request_servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>TPCW_buy_request_servlet</servlet-name>
+    <url-pattern>/TPCW_buy_request_servlet</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    <servlet-name>TPCW_customer_registration_servlet</servlet-name>
+    <servlet-class>cn.org.act.sdp.tpcw.TPCW_customer_registration_servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>TPCW_customer_registration_servlet</servlet-name>
+    <url-pattern>/TPCW_customer_registration_servlet</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    <servlet-name>TPCW_execute_search</servlet-name>
+    <servlet-class>cn.org.act.sdp.tpcw.TPCW_execute_search</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>TPCW_execute_search</servlet-name>
+    <url-pattern>/TPCW_execute_search</url-pattern>
+    </servlet-mapping>    
+    
+	<servlet>
+    <servlet-name>TPCW_home_interaction</servlet-name>
+    <servlet-class>cn.org.act.sdp.tpcw.TPCW_home_interaction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>TPCW_home_interaction</servlet-name>
+    <url-pattern>/TPCW_home_interaction</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>TPCW_new_products_servlet</servlet-name>
+    <servlet-class>cn.org.act.sdp.tpcw.TPCW_new_products_servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>TPCW_new_products_servlet</servlet-name>
+    <url-pattern>/TPCW_new_products_servlet</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    <servlet-name>TPCW_order_display_servlet</servlet-name>
+    <servlet-class>cn.org.act.sdp.tpcw.TPCW_order_display_servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>TPCW_order_display_servlet</servlet-name>
+    <url-pattern>/TPCW_order_display_servlet</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    <servlet-name>TPCW_order_inquiry_servlet</servlet-name>
+    <servlet-class>cn.org.act.sdp.tpcw.TPCW_order_inquiry_servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>TPCW_order_inquiry_servlet</servlet-name>
+    <url-pattern>/TPCW_order_inquiry_servlet</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    <servlet-name>TPCW_product_detail_servlet</servlet-name>
+    <servlet-class>cn.org.act.sdp.tpcw.TPCW_product_detail_servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>TPCW_product_detail_servlet</servlet-name>
+    <url-pattern>/TPCW_product_detail_servlet</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    <servlet-name>TPCW_promotional_processing</servlet-name>
+    <servlet-class>cn.org.act.sdp.tpcw.TPCW_promotional_processing</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>TPCW_promotional_processing</servlet-name>
+    <url-pattern>/TPCW_promotional_processing</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    <servlet-name>TPCW_search_request_servlet</servlet-name>
+    <servlet-class>cn.org.act.sdp.tpcw.TPCW_search_request_servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>TPCW_search_request_servlet</servlet-name>
+    <url-pattern>/TPCW_search_request_servlet</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    <servlet-name>TPCW_shopping_cart_interaction</servlet-name>
+    <servlet-class>cn.org.act.sdp.tpcw.TPCW_shopping_cart_interaction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>TPCW_shopping_cart_interaction</servlet-name>
+    <url-pattern>/TPCW_shopping_cart_interaction</url-pattern>
+    </servlet-mapping>
+    
+  <welcome-file-list>
+    <welcome-file>/TPCW/TPCW_home_interaction</welcome-file>
+  </welcome-file-list>
+</web-app>

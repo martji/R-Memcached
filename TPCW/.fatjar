@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Sat Nov 29 11:17:03 CST 2014
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=C\:\\Users\\\u6B63\u6797\\Desktop\\TPCW_rbe.jar
+manifest.mergeall=true
+manifest.mainclass=rbe.RBE
+manifest.file=<createnew>
+jarname.isextern=true
+onejar.expand=
+excludes=
+includes=
